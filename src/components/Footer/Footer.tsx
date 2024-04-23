@@ -1,22 +1,30 @@
-// import data from "../../data.json"
+interface FooterProps {
+  rotation: string;
+  revolution: string;
+  radius: string;
+  average: string;
+}
 
-export default function Footer(){
-
-
-  return(
-    <div className="footer">
-      <div className="about">
+export default function Footer({ rotation, revolution, radius, average }: FooterProps) {
+  return (
+    <div className="last-info">
+      <div>
         <p>ROTATION TIME</p>
+        <h3>{rotation}</h3>
       </div>
-      <div className="about">
+      <div>
         <p>REVOLUTION TIME</p>
+        <h3>{revolution}</h3>
       </div>
-      <div className="about">
+      <div>
         <p>radius</p>
+        <h3>{radius}</h3>
       </div>
-      <div className="about">
+      <div>
         <p>AVERAGE TEMP.</p>
+        <h3>{average}</h3>
       </div>
     </div>
-  )
+  );
 }
+
