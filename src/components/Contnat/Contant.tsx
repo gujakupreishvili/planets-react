@@ -21,6 +21,7 @@ export default function Content() {
     }
   };
   console.log(menu);
+  console.log(selectedPlanet);
   return (
     <>
       <Header menu={menu} setMenu={setMenu} onClick={handleMenu} />
